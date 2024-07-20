@@ -12,6 +12,9 @@ import Help from './components/Help';
 import Login from './components/pages/Authentication/Login';
 import Register from './components/pages/Authentication/Register';
 import ForgotPassword from './components/pages/Authentication/ForgotPassword';
+import TryOut from './components/pages/Try-Out/TryOut';
+import Test from './components/pages/Try-Out/Test';
+import Products from './components/pages/Products/Products';
 import './App.css';
 
 const Home: React.FC = () => {
@@ -38,6 +41,9 @@ const App: React.FC = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/try-out" element={<TryOut />} />
+        <Route path="/try-out/test" element={<Test />} />
       </Routes>
     </Router>
   );

@@ -1,0 +1,27 @@
+/* ./styles/ComingSoon.css */
+
+:root {
+    --primary-color: #6a0dad; /* Purple */
+    --secondary-color: #8a2be2; /* BlueViolet */
+    --light-color: #f8f9fa; /* Light color for backgrounds */
+    --dark-color: #343a40; /* Dark color for text */
+  }
+  
+  .modal-header, .modal-footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+  }
+  
+  .modal-title {
+    color: var(--light-color);
+  }
+  
+  .btn-primary {
+    background-color: var(--secondary-color) !important;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary-color) !important;
+  }
+  

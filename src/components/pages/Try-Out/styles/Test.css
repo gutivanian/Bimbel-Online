@@ -1,0 +1,155 @@
+.primary{
+    background-color: var(--primary-color) !important;
+    color: var(--light-color) !important;
+    border: var(--primary-color);
+  }
+
+  .secondary{
+    background-color: var(--secondary-color) !important;
+    color: var(--light-color) !important;
+    border: var(--secondary-color);
+  }
+
+  /* ./styles/Test.css */
+
+:root {
+    --primary-color: #6a0dad !important; /* Purple */
+    --secondary-color: #8a2be2 !important; /* BlueViolet */
+    --light-color: #f8f9fa !important; /* Light color for backgrounds */
+    --dark-color: #343a40 !important; /* Dark color for text */
+  }
+  
+  body {
+    background-color: var(--light-color);
+  }
+  
+  .test-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: var(--light-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2, h3, h4 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: var(--dark-color);
+  }
+  
+  .timer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .question-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  .option-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .option-check .form-check-input:checked + .form-check-label {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .option-check .form-check-label {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .option-check .form-check-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .option-check .form-check-input:checked + .form-check-label {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .nav-button {
+    margin: 0.2rem;
+  }
+  
+  .finish-button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .finish-button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .score-section {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--light-color) !important;
+    text-align: center;
+  }
+
+  .score-section h4 {
+    /* font-size: 2rem; */
+    color: var(--light-color) !important;
+  }
+  
+  .total-score-section {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    color: var(--light-color) !important;
+    text-align: center;
+  }
+
+  .total-score-section h3{
+    color: var(--light-color) !important;
+  }
+  
+  .total-score {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--light-color) !important;
+  }
+  
+  .score {
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--light-color);
+  }
+  

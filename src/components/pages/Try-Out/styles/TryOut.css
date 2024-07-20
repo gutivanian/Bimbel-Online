@@ -1,0 +1,56 @@
+/* ./styles/TryOut.css */
+
+.tryout-container {
+  margin-top: 20px;
+}
+
+.tryout-btn {
+  background-color: var(--primary-color) !important;
+  color: var(--light-color) !important;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.tryout-btn:hover {
+  background-color: var(--secondary-color) !important;
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group .form-control {
+  border-radius: 0;
+}
+
+.input-group .input-group-append {
+  background-color: var(--primary-color) !important;
+  color: var(--light-color) !important;
+  border: none;
+}
+
+.input-group .input-group-append:hover {
+  background-color: var(--secondary-color) !important;
+}
+
+.tryout-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.tryout-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tryout-link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.tryout-link:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
