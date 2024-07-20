@@ -1,0 +1,91 @@
+/* ./styles/Hero.css */
+
+:root {
+  --primary-color: #6a0dad; /* Purple */
+  --secondary-color: #8a2be2; /* BlueViolet */
+  --light-color: #f8f9fa; /* Light color for backgrounds */
+  --dark-color: #343a40; /* Dark color for text */
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-image {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-custom, .caption-custom {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.8); /* Light background with some opacity */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.caption-custom h1, .carousel-custom h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+.caption-custom p, .caption-custom ul, .carousel-custom p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: var(--dark-color);
+}
+
+.caption-custom ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.caption-custom li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.caption-custom li::before {
+  content: "• ";
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.caption-custom button {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+.custom-button {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: var(--light-color) !important;
+}
+
+.custom-button:hover {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+@media (max-width: 768px) {
+  .caption-custom h1, .carousel-custom h3 {
+    font-size: 1.75rem;
+  }
+
+  .caption-custom p, .caption-custom ul, .caption-custom li, .carousel-custom p {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
+
+  .carousel-item {
+    height: 300px;
+  }
+}

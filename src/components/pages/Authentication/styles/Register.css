@@ -1,0 +1,100 @@
+/* ./styles/Register.css */
+
+:root {
+  --primary-color: #6a0dad !important; /* Purple */
+  --secondary-color: #8a2be2 !important; /* BlueViolet */
+  --light-color: #f8f9fa !important; /* Light color for backgrounds */
+  --dark-color: #343a40 !important; /* Dark color for text */
+}
+
+.register-div{
+  height: 100%;
+  width: 100%;
+  background-color: var(--dark-color);
+  padding-top: 2rem !important;
+}
+
+
+.register-container {
+  /* background-color: var(--dark-color) !important; */
+  margin-top: 5%;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: var(--secondary-color) !important;
+}
+
+.register-form {
+  padding: 3rem;
+  background-color: var(--light-color) !important;
+  color: var(--dark-color) !important;
+}
+
+.register-form h2 {
+  margin-bottom: 1.5rem;
+  color: var(--dark-color) !important;
+}
+
+.register-form .form-label {
+  color: var(--dark-color) !important;
+}
+
+.social-button {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #db4437 !important; /* Google Red */
+  color: var(--light-color) !important;
+}
+
+.register-welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(to right, var(--primary-color), var(--light-color), var(--secondary-color)); */
+  color: var(--light-color) !important;
+  padding: 3rem !important;
+  height: 100%;
+}
+
+.register-welcome h2 {
+  margin-bottom: 1rem;
+  color: var(--light-color) !important;
+}
+
+.register-welcome p {
+  margin-bottom: 1.5rem;
+  color: var(--light-color) !important;
+}
+
+.login-button {
+  background-color: var(--light-color) !important;
+  color: var(--dark-color) !important;
+  border: none;
+}
+
+.login-button:hover {
+  background-color: var(--secondary-color) !important;
+  color: var(--light-color) !important;
+}
+
+.login-button:active {
+  background-color: var(--dark-color) !important;
+  color: var(--light-color) !important;
+}
+
+.register-button {
+  background-color: var(--primary-color) !important;
+  border: none;
+  color: var(--light-color) !important;
+}
+
+.register-button:hover {
+  background-color: var(--secondary-color) !important;
+  color: var(--light-color) !important;
+}
+
+.register-button:active {
+  background-color: var(--dark-color) !important;
+  color: var(--light-color) !important;
+}

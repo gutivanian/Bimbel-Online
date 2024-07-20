@@ -1,0 +1,41 @@
+/* ./styles/Help.css */
+
+:root {
+    --primary-color: #6a0dad; /* Purple */
+    --secondary-color: #8a2be2; /* BlueViolet */
+    --light-color: #f8f9fa; /* Light color for backgrounds */
+    --dark-color: #343a40; /* Dark color for text */
+  }
+  
+  .help-section {
+    background-color: var(--secondary-color) !important;
+    border-radius: 8px;
+    padding: 20px;
+    color: var(--light-color) !important;
+  }
+  
+  .help-section h2 {
+    color: var(--light-color) !important;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .help-section p {
+    color: var(--light-color) !important;
+    margin: 20px 0;
+    font-size: 1.25rem;
+  }
+  
+  .btn-help {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--light-color) !important;
+    font-size: 1.25rem;
+    padding: 10px 20px;
+  }
+  
+  .btn-help:hover {
+    background-color: var(--dark-color) !important;
+    border-color: var(--dark-color) !important;
+  }
+  

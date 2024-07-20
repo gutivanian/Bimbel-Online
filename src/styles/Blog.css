@@ -1,0 +1,35 @@
+/* ./styles/Blog.css */
+
+:root {
+    --primary-color: #6a0dad; /* Purple */
+    --secondary-color: #8a2be2; /* BlueViolet */
+    --light-color: #f8f9fa; /* Light color for backgrounds */
+    --dark-color: #343a40; /* Dark color for text */
+  }
+  
+  .blog-card {
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+  }
+  
+  .blog-card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .blog-card .card-title {
+    color: var(--dark-color);
+  }
+  
+  .blog-card .card-text {
+    color: var(--dark-color);
+  }
+  
+  .blog-card .btn-link {
+    color: var(--primary-color);
+  }
+  
+  .blog-card .btn-link:hover {
+    color: var(--secondary-color);
+  }
+  

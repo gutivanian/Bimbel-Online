@@ -1,0 +1,35 @@
+/* ./styles/Footer.css */
+
+:root {
+    --primary-color: #6a0dad; /* Purple */
+    --secondary-color: #8a2be2; /* BlueViolet */
+    --light-color: #f8f9fa; /* Light color for backgrounds */
+    --dark-color: #343a40; /* Dark color for text */
+  }
+  
+  .footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+  }
+  
+  .footer h5 {
+    color: var(--light-color);
+  }
+  
+  .footer p {
+    color: var(--light-color);
+  }
+  
+  .footer a {
+    color: var(--light-color);
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: var(--secondary-color);
+  }
+  
+  .footer .mr-2 {
+    margin-right: 0.5rem;
+  }
+  

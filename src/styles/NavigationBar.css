@@ -1,0 +1,103 @@
+/* ./styles/NavigationBar.css */
+
+:root {
+  --primary-color: #6a0dad; /* Purple */
+  --secondary-color: #8a2be2; /* BlueViolet */
+  --light-color: #f8f9fa; /* Light color for backgrounds */
+  --dark-color: #343a40; /* Dark color for text */
+}
+
+body, html, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: linear-gradient(to bottom, var(--dark-color), var(--primary-color));
+}
+
+.navbar-brand {
+  color: var(--light-color) !important;
+  margin-left: 15px; /* Adjust this value to move the brand to the right */
+}
+
+.navbar-brand:hover {
+  color: var(--secondary-color) !important;
+}
+
+.nav-link {
+  color: var(--light-color) !important;
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+.form-control {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.form-control::placeholder {
+  color: var(--dark-color);
+}
+
+.search-form {
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+.search-form .form-control {
+  width: 100%;
+}
+
+.search-button {
+  background-color: var(--light-color) !important;
+  color: var(--dark-color) !important;
+  border-color: var(--light-color) !important;
+}
+
+.search-button:hover {
+  background-color: var(--secondary-color) !important;
+  color: var(--light-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+.search-button:active {
+  background-color: var(--primary-color) !important;
+  color: var(--light-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+/* Custom styles for the navbar toggler */
+.navbar-toggler {
+  border-color: var(--light-color) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(248, 249, 250, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/* Adjust the position of the menu items when the navbar is collapsed */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    display: block;
+    padding-left: 40px; /* Add spacing on the left side */
+  }
+
+  .navbar-nav {
+    margin-left: 0; /* Align menu items to the left */
+  }
+
+  .nav-link {
+    margin: 10px 0; /* Adjust spacing between menu items */
+  }
+}

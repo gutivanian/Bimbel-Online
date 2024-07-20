@@ -1,0 +1,62 @@
+/* ./src/App.css */
+
+body, html, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+.navbar {
+  background: linear-gradient(to bottom, var(--dark-color), var(--primary-color));
+}
+
+.navbar-brand, .nav-link {
+  color: var(--light-color) !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+.nav-link {
+  margin-right: 15px;
+}
+
+.form-control {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.form-control::placeholder {
+  color: var(--dark-color);
+}
+
+.btn-outline-light {
+  color: var(--dark-color);
+  border-color: var(--dark-color);
+}
+
+.btn-outline-light:hover {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.search-form {
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+.search-form .form-control {
+  width: 100%;
+}
