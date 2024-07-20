@@ -32,7 +32,7 @@ const Home: React.FC = () => {
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename='/Bimbel-Online'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
