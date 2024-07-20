@@ -6,7 +6,7 @@ import './styles/TryOut.css';
 import NavigationBar from '../../Navbar';
 
 const TryOut: React.FC = () => {
-  const renderTryOutLinks = (title: string, path: string, count: number = 10) => {
+  const renderTryOutLinks = (title: string, path: string | null = null, count: number = 10) => {
     return [...Array(count)].map((_, index) => (
       <div key={index} className="tryout-item">
         {index === 0 && path ? (
@@ -67,14 +67,14 @@ const TryOut: React.FC = () => {
             <Accordion.Header>Tryout Ujian Mandiri 2024</Accordion.Header>
             <Accordion.Body>
               <div className="tryout-section">
-                {renderTryOutLinks('SIMAK UI')}
-                {renderTryOutLinks('UTUL UGM')}
-                {renderTryOutLinks('Mandiri ITB')}
-                {renderTryOutLinks('Mandiri UNAIR')}
-                {renderTryOutLinks('Mandiri ITS')}
-                {renderTryOutLinks('Mandiri UNPAD')}
-                {renderTryOutLinks('Mandiri UNDIP')}
-                {renderTryOutLinks('Mandiri UNS')}
+                {renderTryOutLinks('SIMAK UI', null)}
+                {renderTryOutLinks('UTUL UGM', null)}
+                {renderTryOutLinks('Mandiri ITB', null)}
+                {renderTryOutLinks('Mandiri UNAIR', null)}
+                {renderTryOutLinks('Mandiri ITS', null)}
+                {renderTryOutLinks('Mandiri UNPAD', null)}
+                {renderTryOutLinks('Mandiri UNDIP', null)}
+                {renderTryOutLinks('Mandiri UNS', null)}
               </div>
             </Accordion.Body>
           </Accordion.Item>
@@ -82,11 +82,11 @@ const TryOut: React.FC = () => {
             <Accordion.Header>Tryout Seleksi Kedinasan 2024</Accordion.Header>
             <Accordion.Body>
               <div className="tryout-section">
-                {renderTryOutLinks('STAN')}
-                {renderTryOutLinks('STIS')}
-                {renderTryOutLinks('STMKG')}
-                {renderTryOutLinks('Poltek SSN')}
-                {renderTryOutLinks('IPDN')}
+                {renderTryOutLinks('STAN', null)}
+                {renderTryOutLinks('STIS', null)}
+                {renderTryOutLinks('STMKG', null)}
+                {renderTryOutLinks('Poltek SSN', null)}
+                {renderTryOutLinks('IPDN', null)}
               </div>
             </Accordion.Body>
           </Accordion.Item>
@@ -94,7 +94,7 @@ const TryOut: React.FC = () => {
             <Accordion.Header>Tryout Seleksi CPNS 2024</Accordion.Header>
             <Accordion.Body>
               <div className="tryout-section">
-                {renderTryOutLinks('Seleksi CPNS 2024')}
+                {renderTryOutLinks('Seleksi CPNS 2024', null)}
               </div>
             </Accordion.Body>
           </Accordion.Item>
@@ -102,7 +102,7 @@ const TryOut: React.FC = () => {
             <Accordion.Header>Tryout Seleksi BUMN 2024</Accordion.Header>
             <Accordion.Body>
               <div className="tryout-section">
-                {renderTryOutLinks('Seleksi BUMN 2024')}
+                {renderTryOutLinks('Seleksi BUMN 2024', null)}
               </div>
             </Accordion.Body>
           </Accordion.Item>

@@ -1,23 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import '../styles/ComingSoon.css';
 
-const ComingSoon: React.FC = () => {
-  const [show, setShow] = useState(true);
+interface ComingSoonProps {
+  show: boolean;
+  handleClose: () => void;
+}
 
-  const handleClose = () => setShow(false);
-
+const ComingSoon: React.FC<ComingSoonProps> = ({ show, handleClose }) => {
   return (
     <Modal show={show} onHide={handleClose} centered>
       <Modal.Header closeButton>
         <Modal.Title>Coming Soon</Modal.Title>
       </Modal.Header>
-      <Modal.Body className="text-center">
-        <img src="https://via.placeholder.com/300x200" alt="Coming Soon" className="img-fluid mb-3" />
-        <p>This feature is still under development. Please check back later!</p>
+      <Modal.Body>
+        <p>This feature is under development. Stay tuned!</p>
+        <img src="https://via.placeholder.com/400" alt="Coming Soon" className="img-fluid" />
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="primary" onClick={handleClose}>
+        <Button variant="secondary" onClick={handleClose}>
           Close
         </Button>
       </Modal.Footer>
